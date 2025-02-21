@@ -29,7 +29,8 @@ git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/l
 # rm -rf openwrt-passwall-packages
 
 # 克隆 coolsnowwolf 的 luci 和 packages 仓库
-# git clone https://github.com/coolsnowwolf/luci.git coolsnowwolf-luci
+
+git clone https://github.com/coolsnowwolf/luci.git coolsnowwolf-luci
 
 git clone https://github.com/coolsnowwolf/packages.git coolsnowwolf-packages
 
