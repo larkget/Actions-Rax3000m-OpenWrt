@@ -11,8 +11,8 @@
 #
 
 # 移除 openwrt feeds 自带的核心包
-rm -rf feeds/packages/net/{xray-core,xray-plugin,v2ray-core,v2ray-plugin,v2ray-geodata,sing-box,hysteria,naiveproxy,shadowsocks-rust,tuic-client,microsocks,chinadns-ng,alist,dns2socks,dns2tcp,ipt2socks}
-rm -rf feeds/luci/applications/{luci-app-passwall,luci-app-ssr-plus}
+rm -rf feeds/packages/net/{xray-core,xray-plugin,v2ray-core,v2ray-plugin,v2ray-geodata,zerotier,tailscale,tailscaled,sing-box,hysteria,naiveproxy,shadowsocks-rust,tuic-client,microsocks,chinadns-ng,alist,dns2socks,dns2tcp,ipt2socks}
+rm -rf feeds/luci/applications/{luci-app-passwall,luci-app-ssr-plus,luci-app-passwall,luci-app-passwall2,luci-app-zerotier}
 git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
 
 # 更新 golang 1.23 版本
@@ -31,6 +31,8 @@ rm -rf openwrt-passwall-packages
 # 克隆 coolsnowwolf 的 luci 和 packages 仓库
 git clone https://github.com/coolsnowwolf/luci.git coolsnowwolf-luci
 git clone https://github.com/coolsnowwolf/packages.git coolsnowwolf-packages
+git clone https://github.com/kiddin9/kwrt-packages kwrt-packages
+
 
 # 替换luci-app-zerotier和luci-app-frpc
 rm -rf feeds/luci/applications/{luci-app-zerotier,luci-app-frpc}
@@ -40,8 +42,8 @@ sed -i 's|include ../../luci\.mk|include ../../../../package/luci.mk|' feeds/luc
 sed -i 's|include ../../luci\.mk|include ../../../../package/luci.mk|' feeds/luci/applications/luci-app-frpc/Makefile
 
 # 替换zerotier、frp 和kcptun
-rm -rf feeds/packages/net/{zerotier,frp,kcptun,haproxy}
-cp -r coolsnowwolf-packages/net/{zerotier,frp,kcptun,haproxy} feeds/packages/net
+# rm -rf feeds/packages/net/{zerotier,frp,kcptun,haproxy}
+# cp -r coolsnowwolf-packages/net/{zerotier,frp,kcptun,haproxy} feeds/packages/net
 
 # 修改frp版本为官网最新v0.61.1 https://github.com/fatedier/frp
 rm -rf feeds/packages/net/frp
