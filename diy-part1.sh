@@ -14,7 +14,7 @@
 #sed -i 's/^[^#]\(.*https:\/\/github\.com\/immortalwrt\/packages.*\)/#\1/' feeds.conf.default
 #sed -i 's/^[^#]\(.*https:\/\/github\.com\/immortalwrt\/luci.*\)/#\1/' feeds.conf.default
 
-echo 'src-git kwrt https://github.com/kiddin9/kwrt-packages' >> feeds.conf.default
+#echo 'src-git kwrt https://github.com/kiddin9/kwrt-packages' >> feeds.conf.default
 
 
 rm -rf feeds/packages/net/{xray-core,xray-plugin,v2ray-core,v2ray-plugin,v2ray-geodata,zerotier,tailscale,tailscaled,sing-box,hysteria,naiveproxy,shadowsocks-rust,tuic-client,microsocks,chinadns-ng,alist,dns2socks,dns2tcp,ipt2socks}
