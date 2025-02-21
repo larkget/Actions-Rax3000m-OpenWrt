@@ -11,7 +11,7 @@
 #
 
 # 移除 openwrt feeds 自带的核心包
-rm -rf feeds/packages/net/{xray-core,xray-plugin,v2ray-core,v2ray-plugin,v2ray-geodata,zerotier,tailscale,tailscaled,sing-box,hysteria,naiveproxy,shadowsocks-rust,tuic-client,microsocks,chinadns-ng,alist,dns2socks,dns2tcp,ipt2socks}
+rm -rf feeds/packages/net/{frp,xray-core,xray-plugin,v2ray-core,v2ray-plugin,v2ray-geodata,zerotier,tailscale,tailscaled,sing-box,hysteria,naiveproxy,shadowsocks-rust,tuic-client,microsocks,chinadns-ng,alist,dns2socks,dns2tcp,ipt2socks}
 rm -rf feeds/luci/applications/{luci-app-passwall,luci-app-ssr-plus,luci-app-passwall,luci-app-passwall2,luci-app-zerotier}
 # git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
 
@@ -23,7 +23,7 @@ git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/l
 # git clone https://github.com/sbwml/luci-app-alist package/alist
 
 # 替换最新版brook
-# rm -rf feeds/packages/net/brook
+rm -rf feeds/packages/net/brook
 # git clone -b main https://github.com/xiaorouji/openwrt-passwall-packages.git
 # cp -r openwrt-passwall-packages/brook feeds/packages/net
 # rm -rf openwrt-passwall-packages
@@ -38,14 +38,14 @@ git clone https://github.com/kiddin9/kwrt-packages kwrt-packages
 
 
 # 替换luci-app-zerotier和luci-app-frpc
-# rm -rf feeds/luci/applications/{luci-app-zerotier,luci-app-frpc}
+rm -rf feeds/luci/applications/{luci-app-zerotier,luci-app-frpc}
 # cp -r coolsnowwolf-luci/applications/{luci-app-zerotier,luci-app-frpc} feeds/luci/applications
 # cp coolsnowwolf-luci/luci.mk package/
 # sed -i 's|include ../../luci\.mk|include ../../../../package/luci.mk|' feeds/luci/applications/luci-app-zerotier/Makefile
 # sed -i 's|include ../../luci\.mk|include ../../../../package/luci.mk|' feeds/luci/applications/luci-app-frpc/Makefile
 
 # 替换zerotier、frp 和kcptun
-# rm -rf feeds/packages/net/{zerotier,frp,kcptun,haproxy}
+rm -rf feeds/packages/net/{zerotier,frp,kcptun,haproxy}
 # cp -r coolsnowwolf-packages/net/{zerotier,frp,kcptun,haproxy} feeds/packages/net
 
 # 修改frp版本为官网最新v0.61.1 https://github.com/fatedier/frp
