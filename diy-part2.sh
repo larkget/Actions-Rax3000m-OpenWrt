@@ -34,7 +34,11 @@ git clone https://github.com/coolsnowwolf/luci.git coolsnowwolf-luci
 
 git clone https://github.com/coolsnowwolf/packages.git coolsnowwolf-packages
 
-git clone https://github.com/kiddin9/kwrt-packages kwrt-packages
+#git clone https://github.com/kiddin9/kwrt-packages kwrt-packages
+
+
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 
 # 替换luci-app-zerotier和luci-app-frpc
