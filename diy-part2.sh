@@ -38,9 +38,17 @@ git clone https://github.com/coolsnowwolf/packages.git coolsnowwolf-packages
 
 #git clone https://github.com/shidahuilang/openwrt-package shidahuilang
 
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
+git clone https://github.com/QiuSimons/openwrt-mos.git package/openwrt-mos
+#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+git clone https://github.com/immortalwrt/homeproxy.git package/luci-app-homeproxy
+git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
+
+git clone https://github.com/sirpdboy/luci-app-partexp.git package/luci-app-partexp
+
+git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
 
 # 替换luci-app-zerotier和luci-app-frpc
 rm -rf feeds/luci/applications/{luci-app-zerotier,luci-app-frpc}
