@@ -36,7 +36,7 @@ git clone https://github.com/coolsnowwolf/packages.git coolsnowwolf-packages
 
 #git clone https://github.com/kiddin9/kwrt-packages kwrt-packages
 
-git clone https://github.com/shidahuilang/openwrt-package shidahuilang
+#git clone https://github.com/shidahuilang/openwrt-package shidahuilang
 
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
