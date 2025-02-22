@@ -27,7 +27,7 @@
 #echo 'src-git kwrt https://github.com/kiddin9/kwrt-packages' >> feeds.conf.default
 
 
-#echo 'src-git shidahuilang https://github.com/shidahuilang/openwrt-package' >> feeds.conf.default
+echo 'src-git shidahuilang https://github.com/shidahuilang/openwrt-package' >> feeds.conf.default
 
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
