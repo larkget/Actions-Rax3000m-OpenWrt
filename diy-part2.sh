@@ -34,9 +34,7 @@ git clone https://github.com/coolsnowwolf/luci.git coolsnowwolf-luci
 
 git clone https://github.com/coolsnowwolf/packages.git coolsnowwolf-packages
 
-#git clone https://github.com/kiddin9/kwrt-packages kwrt-packages
 
-#git clone https://github.com/shidahuilang/openwrt-package shidahuilang
 
 
 # git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
@@ -106,3 +104,51 @@ git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
  rm -rf openwrt-passwall-packages
  
 
+git clone https://github.com/kiddin9/kwrt-packages kwrt-packages
+
+#git clone https://github.com/shidahuilang/openwrt-package shidahuilang
+
+cp -rf kwrt-packages/luci-app-adguardhome feeds/luci/applications/luci-app-adguardhome
+
+cp -rf kwrt-packages/luci-app-tailscale feeds/luci/applications/luci-app-tailscale
+
+cp -rf kwrt-packages/luci-app-zerotier feeds/luci/applications/luci-app-zerotier
+
+cp -rf kwrt-packages/luci-app-dnsproxy feeds/luci/applications/luci-app-dnsproxy
+
+cp -rf kwrt-packages/luci-app-dufs feeds/luci/applications/luci-app-dufs
+
+cp -rf kwrt-packages/luci-app-diskman feeds/luci/applications/luci-app-diskman
+
+cp -rf kwrt-packages/luci-app-gost feeds/luci/applications/luci-app-gost
+
+cp -rf kwrt-packages/luci-app-ksmbd feeds/luci/applications/luci-app-ksmbd
+
+cp -rf kwrt-packages/luci-app-leigod-acc feeds/luci/applications/luci-app-leigod-acc
+
+cp -rf kwrt-packages/luci-app-openclash feeds/luci/applications/luci-app-openclash
+
+cp -rf kwrt-packages/luci-app-partexp feeds/luci/applications/luci-app-partexp
+
+cp -rf kwrt-packages/luci-app-supervisord feeds/luci/applications/luci-app-supervisord
+
+cp -rf kwrt-packages/luci-app-lucky feeds/luci/applications/luci-app-lucky
+
+cp -rf kwrt-packages/luci-app-speedtest-web feeds/luci/applications/luci-app-speedtest-web
+
+cp -rf kwrt-packages/luci-app-filebrowser-go feeds/luci/applications/luci-app-filebrowser-go
+
+
+cp -rf kwrt-packages/luci-app-istoreenhance feeds/luci/applications/luci-app-istoreenhance
+
+cp -rf kwrt-packages/tailscale feeds/packages/net/tailscale
+
+cp -rf kwrt-packages/dufs feeds/packages/net/dufs
+
+cp -rf kwrt-packages/gost feeds/packages/net/gost
+
+cp -rf kwrt-packages/speedtest-cli feeds/packages/net/speedtest-cli
+
+cp -rf kwrt-packages/speedtest-web feeds/packages/net/speedtest-web
+
+rm -rf kwrt-packages
