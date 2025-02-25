@@ -16,8 +16,8 @@ rm -rf feeds/luci/applications/{luci-app-passwall,luci-app-ssr-plus,luci-app-pas
 # git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
 
 # 更新 golang 1.23 版本
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
+# rm -rf feeds/packages/lang/golang
+# git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
 
 # 添加luci-app-alist源码
 # git clone https://github.com/sbwml/luci-app-alist package/alist
@@ -81,3 +81,28 @@ rm -rf feeds/packages/net/{zerotier,frp,kcptun,haproxy}
 
  cp -r coolsnowwolf-lede/package/lean/upx package/
 rm -rf coolsnowwolf-lede
+
+
+rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
+rm -rf feeds/packages/utils/v2dat
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+
+
+
+ git clone https://github.com/xiaorouji/openwrt-passwall openwrt-passwall
+ git clone https://github.com/xiaorouji/openwrt-passwall2 openwrt-passwall2
+ 
+ git clone  https://github.com/xiaorouji/openwrt-passwall-packages  openwrt-passwall-packages
+
+ cp -rf openwrt-passwall/luci-app-passwall  openwrt-passwall2/luci-app-passwall2 feeds/luci/applications/
+ 
+ cp -rf openwrt-passwall-packages/*  feeds/packages/net/
+
+ rm -rf openwrt-passwall 
+ 
+ rm -rf openwrt-passwall2 
+  
+ rm -rf openwrt-passwall-packages
+ 
+
